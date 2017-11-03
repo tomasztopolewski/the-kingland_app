@@ -1,0 +1,15 @@
+DEV
+v0.00.100 (Tomasz Topolewski):
+  + stworzono widoki:
+      * główny (main): domyślenie wyłączony, stworzony na potrzeby ujednolicenia schematu kontrolowania widoków;
+      * początkowy (welcome): zawierający opcję załadowania rozgrywek orz utworzenie nowej (obecnie nie został stworzony schemat działania; założenie to przechodzenie do widoku przygotowanego w późniejszych pracach);
+      * ładowania rozgrywek (loadGameplays): stworzono strukturę backend, plik FXML nie został poprawnie przygotowany (faza testowa);
+  + stworzono kontorlery widoków:
+      * główny (ControllerMain): opracowany i na tym etapie poprawnie napisany, odpowiada na założenia;
+      * początkowy (ControllerWelcome): struktura organizacyjna w fazie testów, niedopracowana oraz niepoprawnie zgrana z założeniami skturalnymi kontrolerów widoków;
+      * ładowania rozgrywek (ControllerWelcome): stworzono sturkturę organizacyjną, brak dosotowania do założeń;
+  + opracowano schemat kontrolowania widoku następnego przez poprzedni (main -> welcome -> loadGameplays):
+      * opcja 'Wstecz' odpowiedzialna jest za wyświetlanie poprzedniego widoku;
+      * metoda 'initialize()' każdorazowo konfiguruje widok kontrolera kontrolującego podrzędny widok (np. welcome -> loadGameplays)
+      
+// Tomasz Topolewski 2017
