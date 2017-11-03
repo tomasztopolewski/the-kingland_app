@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tomasztopolewski.ControllerMain">
+   <children>
+      <MenuBar fx:id="menuBar" blendMode="SRC_ATOP" disable="true" prefHeight="25.0" prefWidth="700.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Gra">
+            <items>
+                  <MenuItem fx:id="menuItemNewGameplay" mnemonicParsing="false" text="Nowa rozgrywka" />
+                  <MenuItem fx:id="menuItemLoadGameplays" mnemonicParsing="false" text="Wczytaj rozgrywki" />
+                  <MenuItem fx:id="menuItemLoadLastGameplay" disable="true" mnemonicParsing="false" text="Wczytaj ostatnią rozgrywkę" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem fx:id="menuItemExit" mnemonicParsing="false" text="Wyjdź" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuItemSettings" disable="true" mnemonicParsing="false" text="Ustawienia">
+            <items>
+              <MenuItem mnemonicParsing="false" text="-" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem fx:id="menuItemTips" mnemonicParsing="false" text="Porady" />
+                  <MenuItem fx:id="menuItemHowPlaying" mnemonicParsing="false" text="Jak grać" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="menuItemInfoAboutGame" mnemonicParsing="false" text="Informacje o grze" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <Blend mode="SCREEN" opacity="0.64" />
+         </effect>
+      </MenuBar>
+      <Pane fx:id="pane" layoutY="25.0" prefHeight="475.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="labelTitle" alignment="CENTER" layoutY="165.0" prefHeight="55.0" prefWidth="700.0" text="The KingLand">
+               <font>
+                  <Font name="System Bold" size="68.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelVersion" alignment="CENTER" layoutY="453.0" prefHeight="17.0" prefWidth="700.0" text="version" textFill="#0000006a">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
