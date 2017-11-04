@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tomasztopolewski.views.windows.ControllerLoadGameplays">
+   <children>
+      <MenuBar fx:id="menuBar" blendMode="SRC_ATOP" prefHeight="25.0" prefWidth="700.0">
+        <menus>
+          <Menu fx:id="menuItemGame" mnemonicParsing="false" text="Gra">
+            <items>
+                  <MenuItem fx:id="menuItemNewGameplay" mnemonicParsing="false" text="Nowa rozgrywka" />
+                  <MenuItem fx:id="menuItemLoadGameplays" mnemonicParsing="false" text="Wczytaj rozgrywki" />
+                  <MenuItem fx:id="menuItemLoadLastGameplay" disable="true" mnemonicParsing="false" text="Wczytaj ostatnią rozgrywkę" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem fx:id="menuItemExit" mnemonicParsing="false" text="Wyjdź" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuItemSettings" mnemonicParsing="false" text="Ustawienia">
+            <items>
+              <MenuItem disable="true" mnemonicParsing="false" text="Zmień ustawienia" />
+                  <MenuItem disable="true" mnemonicParsing="false" text="Resetuj ustawienia" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuItemHelp" mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem fx:id="menuItemTips" mnemonicParsing="false" text="Porady" />
+                  <MenuItem fx:id="menuItemHowPlaying" mnemonicParsing="false" text="Jak grać" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="menuItemInfoAboutGame" mnemonicParsing="false" text="Informacje o grze" />
+            </items>
+          </Menu>
+        </menus>
+         <effect>
+            <Blend mode="SCREEN" opacity="0.64" />
+         </effect>
+      </MenuBar>
+      <Pane fx:id="pane" layoutY="25.0" prefHeight="475.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="labelTitleAndVersion" alignment="CENTER" layoutY="453.0" prefHeight="17.0" prefWidth="700.0" text="title and version" textFill="#0000006a">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTextErrorLoadingGameplays" alignment="CENTER" contentDisplay="CENTER" disable="true" layoutY="147.0" prefHeight="160.0" prefWidth="700.0" text="Nie można było załadować poprawnie ostatnich rozgrywek." textAlignment="CENTER" visible="false" wrapText="true">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelText1" layoutX="249.0" layoutY="74.0" prefHeight="35.0" prefWidth="203.0" text="Ostatnie rozgrywki:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonBackward" defaultButton="true" layoutX="599.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="Wstecz" />
+            <Button fx:id="buttonGameplay1" alignment="CENTER" cache="true" disable="true" layoutX="80.0" layoutY="123.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="160.0" prefWidth="170.0" style="-fx-background-color: linear-gradient(#eeeff0, #d2e2e7); -fx-border-color: #e2e2e2;" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonGameplay2" alignment="CENTER" cache="true" disable="true" layoutX="266.0" layoutY="123.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="160.0" prefWidth="170.0" style="-fx-background-color: linear-gradient(#eeeff0, #d2e2e7); -fx-border-color: #e2e2e2;" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonGameplay3" alignment="CENTER" cache="true" disable="true" layoutX="452.0" layoutY="123.0" mnemonicParsing="false" mouseTransparent="true" prefHeight="160.0" prefWidth="170.0" style="-fx-background-color: linear-gradient(#eeeff0, #d2e2e7); -fx-border-color: #e2e2e2;" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonNewGameplay" layoutX="265.0" layoutY="309.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="170.0" text="Nowa rozgrywka">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

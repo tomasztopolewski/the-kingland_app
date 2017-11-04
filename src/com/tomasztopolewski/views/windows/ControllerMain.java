@@ -1,5 +1,6 @@
-package com.tomasztopolewski;
+package com.tomasztopolewski.views.windows;
 
+import com.tomasztopolewski.Main;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -25,7 +26,7 @@ public class ControllerMain implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         /**************************************************************************************
-         *****  WIDOK OKNA LOADGAMEPLAYS.FXML / com.tomasztopolewski.ControllerLoadGameplays
+         *****  WIDOK OKNA LOADGAMEPLAYS.FXML / com.tomasztopolewski.views.windows.ControllerLoadGameplays
          * Generowanie obiektów odpowiedzialnych za poprawne wyświetlanie okna
          * obsługa rozpoczętych rozgrywek - widok 'loadGameplaysStage'.
          * Aby pokazać okno należy wywołać funkcje:
@@ -57,7 +58,11 @@ public class ControllerMain implements Initializable {
      * zaczynające się na "close' schowają widok.
      */
     public static void showWelcomeStage() {
-        if (!(welcomeStage.isShowing())) welcomeStage.show();
+        if (!(welcomeStage.isShowing())) {
+            welcomeStage.setResizable(false);
+            welcomeStage.sizeToScene();
+            welcomeStage.show();
+        }
     }
     public static void closeWelcomeStage() {
         if (welcomeStage.isShowing()) welcomeStage.close();

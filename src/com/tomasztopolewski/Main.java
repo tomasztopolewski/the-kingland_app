@@ -1,6 +1,8 @@
 package com.tomasztopolewski;
 
+import com.tomasztopolewski.views.windows.ControllerMain;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -16,14 +18,19 @@ public class Main extends Application {
 
     @Override
     public void start(Stage mainStage) throws Exception {
-        Parent mainRoot = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Parent mainRoot = FXMLLoader.load(getClass().getResource("views/windows/main.fxml"));
         mainStage.setTitle(nameOfGame);
         //primaryStage.setResizable(false); // powoduje presuwanie się części layout'u
         mainStage.setScene(new Scene(mainRoot, ControllerMain.widthMainView, ControllerMain.heightMainView));
         //mainStage.show();
+
     }
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public static void exitPlatform() {
+        Platform.exit();
     }
 }
