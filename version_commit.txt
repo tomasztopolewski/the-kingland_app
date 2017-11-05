@@ -1,4 +1,4 @@
-DEV
+*** DEV ***
 v0.00.100 (Tomasz Topolewski):
   + stworzono widoki:
       * główny (main): domyślenie wyłączony, stworzony na potrzeby ujednolicenia schematu kontrolowania widoków;
@@ -8,8 +8,22 @@ v0.00.100 (Tomasz Topolewski):
       * główny (ControllerMain): opracowany i na tym etapie poprawnie napisany, odpowiada na założenia;
       * początkowy (ControllerWelcome): struktura organizacyjna w fazie testów, niedopracowana oraz niepoprawnie zgrana z założeniami skturalnymi kontrolerów widoków;
       * ładowania rozgrywek (ControllerWelcome): stworzono sturkturę organizacyjną, brak dosotowania do założeń;
-  + opracowano schemat kontrolowania widoku następnego przez poprzedni (main -> welcome -> loadGameplays):
+  + opracowano schemat kontrolowania widoku następnego przez poprzedni (main -> welcome -> loadGameplays) - kontroler kontrolujący:
       * opcja 'Wstecz' odpowiedzialna jest za wyświetlanie poprzedniego widoku;
       * metoda 'initialize()' każdorazowo konfiguruje widok kontrolera kontrolującego podrzędny widok (np. welcome -> loadGameplays)
-      
+
+v0.00.300 (Tomasz Topolewski):
+  + ulepszono działanie schematu kontroler kontrolujący
+  + poprawiono wygląd i wprowadzono zmiany w ujednoliceniu graficznym
+      * ujednolicono przyciski z widoku 'welcome' oraz 'loadGameplays'
+      * stworzono pola (będące przyciskami) do załadowania rozgrywek - brak implementacji programistycznej
+      * widok każdego z okien został unieruchomiony - brak możliwości maksymalizowania okna
+  + wprowadzono podział widoków dla okien gry i mniejszych okien zawierających pytania:
+      * stworzono okno 'questionExit', które odpowiada za wyłączanie gry
+      * odpowiedznio ulokowane dotychczasowe klasy kontrolerów i pliki widoków FXML do ścieżki com.tomasztopolewski/views/windows/
+  + poprawiono działanie przejść między oknami (welcome -> loadGameplays oraz loadGameplays -> welcome):
+      * wprowadzono zastosowanie funkcji ustawiającej wartośc "zawsze na górze" do wyświetlanego okna, dostosowana ją do przejść po międzt oknami (jedno okno przestaje posiadać właściwość "zawsze na górze", drugie je zyskuje i na odwórt)
+  + dodano widok pytania 'questionSaveAndExit': widok nie został oprawiony graficznie, struktura organizacyjna nie została stworzona;
+  + poprawiono i dodano komenatrze do kodu zwiększające czytelności i objaśniające zastosowane rozwiązania
+
 // Tomasz Topolewski 2017
