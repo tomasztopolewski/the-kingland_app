@@ -37,9 +37,8 @@ public class ControllerLoadGameplays implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        /**************************************************************************************
-         *****  OBSŁUGA WIDOKU KONTROLERA
-         * Obsługa początkowego okna.
+        /**** OBSŁUGA WIDOKU KONTROLERA
+         * Obsługa okna z rozgrywkami.
          */
         labelTitleAndVersion.setText(Main.nameOfGame + " ver." + Main.versionOfGame + " " + Main.typeVersionOfGame);
         buttonGameplay1.setDisable(false);

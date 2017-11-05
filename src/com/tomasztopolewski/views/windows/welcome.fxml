@@ -17,14 +17,14 @@
          <menus>
             <Menu fx:id="menuItemGame" mnemonicParsing="false" text="Gra">
                <items>
-                  <MenuItem fx:id="menuItemNewGameplay1" mnemonicParsing="false" text="Nowa rozgrywka" />
-                  <MenuItem fx:id="menuItemLoadGameplays1" mnemonicParsing="false" text="Wczytaj rozgrywki" />
-                  <MenuItem fx:id="menuItemLoadLastGameplay1" disable="true" mnemonicParsing="false" text="Wczytaj ostatnią rozgrywkę" />
+                  <MenuItem fx:id="menuItemNewGameplay" mnemonicParsing="false" text="Nowa rozgrywka" />
+                  <MenuItem fx:id="menuItemLoadGameplays" mnemonicParsing="false" text="Wczytaj rozgrywki" />
+                  <MenuItem fx:id="menuItemLoadLastGameplay" disable="true" mnemonicParsing="false" text="Wczytaj ostatnią rozgrywkę" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="menuItemExit1" mnemonicParsing="false" text="Wyjdź" />
+                  <MenuItem fx:id="menuItemExit" mnemonicParsing="false" text="Wyjdź" />
                </items>
             </Menu>
-            <Menu fx:id="menuItemSettings1" mnemonicParsing="false" text="Ustawienia">
+            <Menu fx:id="menuItemSettings" mnemonicParsing="false" text="Ustawienia">
                <items>
                   <MenuItem disable="true" mnemonicParsing="false" text="Zmień ustawienia" />
                   <MenuItem disable="true" mnemonicParsing="false" text="Resetuj ustawienia" />
@@ -32,10 +32,10 @@
             </Menu>
             <Menu fx:id="menuItemHelp" mnemonicParsing="false" text="Pomoc">
                <items>
-                  <MenuItem fx:id="menuItemTips1" mnemonicParsing="false" text="Porady" />
-                  <MenuItem fx:id="menuItemHowPlaying1" mnemonicParsing="false" text="Jak grać" />
+                  <MenuItem fx:id="menuItemTips" mnemonicParsing="false" text="Porady" />
+                  <MenuItem fx:id="menuItemHowPlaying" mnemonicParsing="false" text="Jak grać" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="menuItemInfoAboutGame1" mnemonicParsing="false" text="Informacje o grze" />
+                  <MenuItem fx:id="menuItemInfoAboutGame" mnemonicParsing="false" text="Informacje o grze" />
                </items>
             </Menu>
          </menus>

@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     public final static String nameOfGame = "The KingLand";
-    public final static String versionOfGame = "1.00.000";
+    public final static String versionOfGame = "1.01.000";
     public final static String typeVersionOfGame = "DEV";
     public final static String author = "Tomasz Topolewski";
 

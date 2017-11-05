@@ -28,6 +28,10 @@ public class ControllerQuestionExit implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        /**** OBSŁUGA WIDOKU KONTROLERA
+         * Obsługa okna z pytanie o wyjście z gry.
+         */
+
         buttonYes.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {

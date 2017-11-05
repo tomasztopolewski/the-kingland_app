@@ -17,22 +17,17 @@ public class ControllerMain implements Initializable {
     public final static String versionOfControllerWelcome = "1.00.000";
     public final static double heightMainView = 500.0, widthMainView = 700.0;
 
-    // stage odpowiedzialny za widok welcome
+
+    // stage odpowiedzialny za widok welcome oraz interpetacja pliku fxml'owa dla widoku welcome.fxml
     public static Stage welcomeStage = new Stage();
-    // interpetacja pliku fxml'owa dla widoku loadGameplays.fxml
     public Parent welcomeRoot;
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        /**************************************************************************************
-         *****  WIDOK OKNA LOADGAMEPLAYS.FXML / com.tomasztopolewski.views.windows.ControllerLoadGameplays
+        /**** WIDOK OKNA WELCOME.FXML / com.tomasztopolewski.views.windows.ControllerWelcome
          * Generowanie obiektów odpowiedzialnych za poprawne wyświetlanie okna
-         * obsługa rozpoczętych rozgrywek - widok 'loadGameplaysStage'.
-         * Aby pokazać okno należy wywołać funkcje:
-         * 'showLoadGameplaysStage()'.
-         * Aby schować okno nalezy wywołać funkcje:
-         * 'closeLoadGameplaysStage()'.
+         * początkowego.
          */
         try {
             welcomeRoot = FXMLLoader.load(getClass().getResource("welcome.fxml"));
@@ -50,8 +45,7 @@ public class ControllerMain implements Initializable {
     }
 
 
-    /******************************************************************************************
-     *****  OBSŁUGA WIDOKÓW
+    /**** OBSŁUGA WIDOKÓW
      * Funkcje poniżej służą do obsługi widoków w grze.
      * Każdy widok posiada funkcje pokazującą i schowającą widok.
      * Funkcje zaczynające się od 'show' pokazuję widok, a funkcje
@@ -69,8 +63,7 @@ public class ControllerMain implements Initializable {
     }
 
 
-    /******************************************************************************************
-     *****  MESSAGES
+    /**** MESSAGES
      * Za pomocą poniższych funkcji można wygenerować odpowiednie wiadomości
      * dla użytkownika. Są to: informacyjna, ostrzegwcza, zawierająca błąd.
      */
