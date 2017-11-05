@@ -25,5 +25,10 @@ v0.00.300 (Tomasz Topolewski):
       * wprowadzono zastosowanie funkcji ustawiającej wartośc "zawsze na górze" do wyświetlanego okna, dostosowana ją do przejść po międzt oknami (jedno okno przestaje posiadać właściwość "zawsze na górze", drugie je zyskuje i na odwórt)
   + dodano widok pytania 'questionSaveAndExit': widok nie został oprawiony graficznie, struktura organizacyjna nie została stworzona;
   + poprawiono i dodano komenatrze do kodu zwiększające czytelności i objaśniające zastosowane rozwiązania
+  
+v0.00.370 (Tomasz Topolewski):
+  + utworzono strukturę organizacyjną dla plików gry oraz klas obsługujących grę
+  + utworzono klasę (com.tomasztopolewski.preparation.Files) odpowiedzialną 
+  + dodano opisy dla klas niebędących składowymi dla modelu MVC
 
 // Tomasz Topolewski 2017
