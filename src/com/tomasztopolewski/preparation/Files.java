@@ -12,21 +12,26 @@ import java.nio.file.Path;
 
 public abstract class Files {
 
-    private final static String pathToFolderGame = "C:\\Program Files\\TheKingLand";
+    public final static String pathToFolderGame = "C:\\Program Files\\TheKingLand\\";
     /**** OBJAŚNIENIE STRUKTURY PLIKÓW
      * bin - pliki ustawień gry
-     * bin\bas - pliki baz danych
-     * cot - pliki o użytkownikach (postęp, rozwój w grze)
+     * bin\cort - pliki związane z graczem
      */
 
+    public final static String nameFilePlayers = "plys";
+    public final static String extensionFilePlayers = "kingfile";
+    public final static String pathFilePlayers = "bin\\";
+    public final static String defaultContentFilePlayers = "player0:00;";
 
-    // przechowuje informacje o poprawności struktury plików gry
-    private static boolean isAllOkay = false;
+    public final static String nameFileGameplays = "corts";
+    public final static String extensionFileGameplays = "kingfile";
+    public final static String pathFileGameplays = "bin\\";
+    public final static String defaultContentFileGameplays = "00:00000;";
 
-    public static boolean isIsAllOkay() {
-        return false;
-    }
-
+    public final static String nameFileZeroGameplay = "00000";
+    public final static String extensionFileZeroGameplay = "kingfile";
+    public final static String pathFileZeroGameplay = "bin\\cort\\";
+    public final static String defaultContentFileZeroGameplay = "//defaultowa zawartość pliku";
 
 
 }

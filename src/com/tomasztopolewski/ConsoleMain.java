@@ -6,8 +6,11 @@
 
 package com.tomasztopolewski;
 
-public class ConsoleMain {
-    public static void main(String[] args) {
+import com.tomasztopolewski.preparation.Installation;
+import java.io.IOException;
 
+public class ConsoleMain {
+    public static void main(String[] args) throws IOException {
+        if (new Installation().isIsOkay()) System.out.println("I get it!");
     }
 }

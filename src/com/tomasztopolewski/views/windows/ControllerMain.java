@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,6 +34,7 @@ public class ControllerMain implements Initializable {
             welcomeRoot = FXMLLoader.load(getClass().getResource("welcome.fxml"));
             welcomeStage.setTitle(Main.nameOfGame);
             welcomeStage.setScene(new Scene(welcomeRoot, ControllerWelcome.widthWelcomeView, ControllerWelcome.heightWelcomeView));
+            //welcomeStage.getIcons().add(new Image("img/icon_v0-1.png"));
             welcomeStage.setResizable(false);
             welcomeStage.sizeToScene();
             welcomeStage.setAlwaysOnTop(true);

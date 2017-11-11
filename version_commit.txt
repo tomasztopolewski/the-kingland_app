@@ -28,7 +28,7 @@ v0.00.300 (Tomasz Topolewski):
   
 v0.00.370 (Tomasz Topolewski):
   + utworzono strukturę organizacyjną dla plików gry oraz klas obsługujących grę
-  + utworzono klasę (com.tomasztopolewski.preparation.Files) odpowiedzialną 
+  + utworzono klasę (com.tomasztopolewski.preparation.Files) odpowiedzialną
   + dodano opisy dla klas niebędących składowymi dla modelu MVC
 
 // Tomasz Topolewski 2017
