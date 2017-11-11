@@ -31,4 +31,10 @@ v0.00.370 (Tomasz Topolewski):
   + utworzono klasę (com.tomasztopolewski.preparation.Files) odpowiedzialną
   + dodano opisy dla klas niebędących składowymi dla modelu MVC
 
+v0.00.700 (Tomasz Topolewski):
+  + stworzenie klasy sprawdzającej instalację gry (com.tomasztopolewski.preparation.Installation), wykorzystywanej jako klasa anonimowa przy uruchamianiu gry w klasie główenj (Main) i tworzącej widok main (main.fxml)
+  + stworzenie klasy posiadającej informacje o podstawowych i domyślnych plikach w grze, przetrzymujących informację o domyślnych wartościach w plikach
+  + implentacja algorytmu sprawdzającego poprawność instalacji (obecny stan: sprawdzanie czy pliki gry są w stanie do odczytu przez aplikację) i w przeciwn razie wyświeltenie okna criticalError (criticalError.fxml)
+  + utworzenie widoku wraz z kontrolorem criticalError (criticalError.fxml i com.tomasztopolewski.views.windows.ControllerCriticalError)
+
 // Tomasz Topolewski 2017
