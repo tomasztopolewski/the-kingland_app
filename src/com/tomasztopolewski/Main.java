@@ -21,6 +21,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage mainStage) throws Exception {
+        // algorytm sprawdzający poprawność instalacji gry zaimplementowany w klasę 'Installation' w metodę tej klasy 'isIsOkay()'
         if (new Installation().isIsOkay()) {
             Parent mainRoot = FXMLLoader.load(getClass().getResource("views/windows/main.fxml"));
             mainStage.setTitle(nameOfGame);
