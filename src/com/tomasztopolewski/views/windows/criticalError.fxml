@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tomasztopolewski.views.windows.ControllerCriticalError">
+   <children>
+      <Label layoutX="35.0" layoutY="286.0" prefHeight="59.0" prefWidth="635.0" text="Podczas ładowania aplikacji wystąpił krytyczny błąd. Spróbuj ponownie załadować aplikację. Jeśli problem będzie powtarzał, skontaktuj się z pomocą techniczną." wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="237.0" prefHeight="47.0" prefWidth="283.0" text="BŁĄD KRYTYCZNY" wrapText="true">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="81.0" text=":(">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="386.0" prefHeight="17.0" prefWidth="389.0" text="\$~CRITICAL_ERROR: the-kingland_app/Main - 0x00-000" textFill="#8d8a8a" />
+      <Label layoutX="564.0" layoutY="14.0" prefHeight="17.0" prefWidth="122.0" text="The KingLand" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="403.0" prefHeight="17.0" prefWidth="389.0" text="\$~CRITICAL_ERROR [0x00-000] Aplikacja nie mogła być załadowana." textFill="#8d8a8a" />
+      <Label layoutX="47.0" layoutY="420.0" prefHeight="17.0" prefWidth="427.0" text="\$~CRITICAL_ERROR [0x00-100] Struktura plików aplikacji została uszkodzona." textFill="#8d8a8a" />
+   </children>
+</AnchorPane>
